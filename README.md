@@ -42,7 +42,7 @@ This is a responsive real estate website featuring dark mode, property details, 
 - Visit the About Us and Services pages to learn more about the company.
 - Check out the FAQ section for common questions.
 
- Dark Mode
+### Dark Mode
 Users can toggle between light and dark modes using the switch in the header.
 
 ## Contributing
@@ -55,4 +55,7 @@ Contributions are welcome! To contribute:
 4. Push to the branch (`git push origin feature-new-feature`).
 5. Open a pull request.
 
-
+![My Hero](./src/assets/images/blacklandingpage.png)
+![My whiteHero](./src/assets/images/whitelandingpage.png)
+![My blackservice](./src/assets/images/blackservicepage.png)
+![My whiteservice](./src/assets/images/whitelandingpage.png)
