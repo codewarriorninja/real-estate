@@ -22,7 +22,7 @@ Features
 - Pages:
   - About Us: Provides company information and mission statement.
   - Services: Describes the various real estate services offered.
-  - Properties: Showcases available properties with filtering options.
+  - Properties: Showcases available properties
 
 Tech Stack
 
