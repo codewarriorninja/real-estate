@@ -55,7 +55,7 @@ Contributions are welcome! To contribute:
 4. Push to the branch (`git push origin feature-new-feature`).
 5. Open a pull request.
 
-![My Hero](./src/assets/images/blacklandingpage.png)
-![My whiteHero](./src/assets/images/whitelandingpage.png)
-![My blackservice](./src/assets/images/blackservicepage.png)
-![My whiteservice](./src/assets/images/whitelandingpage.png)
+![My Hero](./src/assets/Images/blacklandingpage.png)
+![My whiteHero](./src/assets/Images/whitelandingpage.png)
+![My blackservice](./src/assets/Images/blackservicepage.png)
+![My whiteservice](./src/assets/Images/whitelandingpage.png)
