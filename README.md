@@ -8,11 +8,16 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
+<<<<<<< HEAD
 # Real Estate Website
+=======
+
+Real Estate Website
+>>>>>>> 5e83cefdc2942fc4cd9bda398f3a04d3492bf515
 
 This is a responsive real estate website featuring dark mode, property details, testimonials, FAQs, and dedicated pages for About Us, Services, and Properties. The project is designed to showcase real estate listings and provide an engaging experience for users looking for properties.
 
-## Features
+Features
 
 - Dark Mode: Allows users to switch between light and dark themes for a personalized browsing experience.
 - Property Details: Displays detailed information about individual properties, including images, pricing, and specifications.
@@ -21,11 +26,11 @@ This is a responsive real estate website featuring dark mode, property details, 
 - Pages:
   - About Us: Provides company information and mission statement.
   - Services: Describes the various real estate services offered.
-  - Properties: Showcases available properties with filtering options.
+  - Properties: Showcases available properties
 
-## Tech Stack
+Tech Stack
 
-- Technolgy: React (if applicable), Tailwind CSS
+- Technolgy: React, Tailwind CSS
 - State Management: React Hooks 
 - Additional Libraries: 
   - React Router for navigation
