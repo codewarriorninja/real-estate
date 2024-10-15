@@ -41,7 +41,7 @@ const ServicePage = () => {
           <div className="md:col-span-2 lg:col-span-2 px-5 py-3 bg-slate-200 dark:bg-[#1a1a1a] shadow-md rounded-lg">
             <div className="flex justify-between items-center">
             <h1 className="dark:text-white font-Urbanist font-medium lg:text-[30px] md:text-[20px] sm:text-[15px]">Unlock the Value of Your Property Today</h1>
-            <button className="dark:text-white font-Urbanist font-medium dark:bg-bg px-2 py-2 rounded-lg">Learn More</button>
+            <button className="dark:text-white font-Urbanist font-medium dark:bg-bg px-2 py-2 rounded-lg text-sm whitespace-nowrap bg-gray-600 text-white">Learn More</button>
             </div>
             <p className="dark:text-[#999999] font-Urbanist font-medium leading-8 max-w-screen-xl xl:text-[16px]">Ready to unlock the true value of your property? Explore our Property Selling Service categories and let us help you achieve the best deal possible for your valuable asset.</p>
         </div>
@@ -68,7 +68,7 @@ const ServicePage = () => {
           <div className="md:col-span-2 lg:col-span-2 px-5 py-3 bg-slate-200 dark:bg-[#1a1a1a] shadow-md rounded-lg">
             <div className="flex justify-between items-center">
             <h1 className="dark:text-white font-Urbanist font-medium lg:text-[30px] md:text-[20px] sm:text-[15px]">Experience Effortless Property Management</h1>
-            <button className="dark:text-white font-Urbanist font-medium dark:bg-bg px-2 py-2 rounded-lg">Learn More</button>
+            <button className="dark:text-white font-Urbanist font-medium dark:bg-bg px-2 py-2 rounded-lg text-sm whitespace-nowrap bg-gray-600 text-white">Learn More</button>
             </div>
             <p className="dark:text-[#999999] font-Urbanist font-medium leading-8 max-w-screen-xl xl:text-[16px]">Ready to experience hassle-free property management? Explore our Property Management Service categories and let us handle the complexities while you enjoy the benefits of property ownership.</p>
         </div>
@@ -80,7 +80,7 @@ const ServicePage = () => {
               <div className="p-6 dark:bg-[#1a1a1a] bg-slate-200  rounded-lg space-y-4">
                 <h2 className="dark:text-white font-Urbanist font-semibold text-xl">Unlock Your Investment Potential</h2>
                 <p className="dark:text-[#9999] font-Urbanist font-medium max-w-xs">Explore our Property Management Service categories and let us handle the complexities while you enjoy the benefits of property ownership.</p>
-                <button className="px-4 bg-bg py-2 rounded text-white">Learn More</button>
+                <button className="px-4 bg-bg py-2 rounded text-white whitespace-nowrap">Learn More</button>
               </div>
            </div>
            <div className="lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
