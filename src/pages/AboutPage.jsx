@@ -5,7 +5,7 @@ const AboutPage = () => {
   return (
     <section className="bg-white dark:bg-bg pt-16 w-full">
      <div className="padding-x max-xl:padding-xyz mx-auto">
-       <div className="flex justify-between max-lg:flex-col items-center gap-[80px]">
+       <div className="flex justify-between max-lg:flex-col items-center gap-[40px] lg:gap-[80px]">
          <div className="flex flex-col w-full flex-1">
            <h1 className="dark:text-white font-semibold font-Urbanist sm:text-[28px] xl:text-[48px] md:text-[38px] leading-relaxed pb-5">Our Journey</h1>
            <p className="dark:text-[#999999] font-Urbanist font-medium leading-8">Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary. Over the years, we've expanded our reach, forged valuable partnerships, and gained the trust of countless clients.</p>
@@ -13,9 +13,13 @@ const AboutPage = () => {
             {statistics.map((statistic) => (
                 <div key={statistic.Label} className="font-Urbanist bg-slate-200 shadow-lg dark:bg-[#1A1A1A] max-sm:text-center rounded-lg px-5 py-3">
                   <h1 className="dark:text-white text-[30px] font-Urbanist font-bold">{statistic.value}</h1>
-                  <p className="text-[14px] text-[#999999] font-medium font-Urbanist">{statistic.Label}</p>
+                  <p className="text-[14px] text-[#999999] font-medium font-Urbanist whitespace-nowrap">{statistic.Label}</p>
                 </div>
               ))}
+              <div className="col-span-2 md:col-span-1 font-Urbanist bg-slate-200 shadow-lg dark:bg-[#1A1A1A] max-sm:text-center rounded-lg px-5 py-3">
+                <h1 className="dark:text-white text-[30px] font-Urbanist font-bold">16+</h1>
+                <p className="text-[14px] text-[#999999] font-medium font-Urbanist">ears of Experience</p>
+              </div>
            </div>
          </div>
          <div className="w-full flex-1">

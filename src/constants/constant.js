@@ -16,9 +16,9 @@ export const statistics = [
 {
     value:'10k+', Label:'Properties For Clients'
 },
-{
-    value:'16+', Label:'Years of Experience'
-}
+// {
+//     value:'16+', Label:'Years of Experience'
+// }
 ];
 export const Servicess = [
     {imgUrl:Home, text:'Find Your Dream Home'},

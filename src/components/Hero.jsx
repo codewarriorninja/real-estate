@@ -17,14 +17,19 @@ const Hero = () => {
              <button className="border border-[#262626] rounded-[8px] px-2 py-3 dark:text-white font-Urbanist font-medium text-[14px] w-full md:w-56">Learn More</button>
              <button className="bg-[#703BF7] dark:text-white rounded-[8px] px-2 py-3 w-full md:w-56">Browse Properties</button>
           </div>
-          <div className="grid max-md:grid-cols-2 md:grid-cols-3 gap-6 my-10 w-full">
+
+           <div className="grid max-md:grid-cols-2 md:grid-cols-3 gap-6 my-10 w-full">
             {statistics.map((statistic) => (
-              <div key={statistic.Label} className="font-Urbanist bg-slate-200 shadow-lg dark:bg-[#1A1A1A] max-sm:text-center rounded-lg px-5 py-3">
-                <h1 className="dark:text-white text-[30px] font-Urbanist font-bold">{statistic.value}</h1>
-                <p className="text-[14px] text-[#999999] font-medium font-Urbanist">{statistic.Label}</p>
+                <div key={statistic.Label} className="font-Urbanist bg-slate-200 shadow-lg dark:bg-[#1A1A1A] max-sm:text-center rounded-lg px-5 py-3">
+                  <h1 className="dark:text-white text-[30px] font-Urbanist font-bold">{statistic.value}</h1>
+                  <p className="text-[14px] text-[#999999] font-medium font-Urbanist whitespace-nowrap">{statistic.Label}</p>
                 </div>
-            ))}
-          </div>
+              ))}
+              <div className="col-span-2 md:col-span-1 font-Urbanist bg-slate-200 shadow-lg dark:bg-[#1A1A1A] max-sm:text-center rounded-lg px-5 py-3">
+                <h1 className="dark:text-white text-[30px] font-Urbanist font-bold">16+</h1>
+                <p className="text-[14px] text-[#999999] font-medium font-Urbanist">ears of Experience</p>
+              </div>
+           </div>
          </div>
          <div className="flex items-center w-full">
           <img src={HeroContainer} className="object-contain rounded" />
