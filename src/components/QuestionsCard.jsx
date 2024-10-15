@@ -9,8 +9,8 @@ const QuestionsCard = ({Question}) => {
             </div>
           ))}
        </div> */}
-       <h2 className="dark:text-white font-Urbanist font-semibold text-[20px] p-4">{Question.Title}</h2>
-       <p className="dark:text-white font-Urbanist leading-relaxed mt-2 p-4">{Question.QuestionText}</p>
+       <h2 className="dark:text-white font-Urbanist font-semibold text-xl p-4">{Question.Title}</h2>
+       <p className="dark:text-white font-Urbanist mt-2 p-4 max-w-md text-base">{Question.QuestionText}</p>
        </div>
   )
 }

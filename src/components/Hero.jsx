@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import { HeroContainer } from "../assets/Images/images"
 import { statistics } from "../constants/constant"
 
@@ -14,7 +15,7 @@ const Hero = () => {
           <p className="max-w-lg font-Urbanist dark:text-[#999999] font-medium leading-[150%] py-8">Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</p>
           <div className="flex max-sm:flex-col gap-4 max-sm:w-full md:flex-row">
              <button className="border border-[#262626] rounded-[8px] px-2 py-3 dark:text-white font-Urbanist font-medium text-[14px]">Learn More</button>
-             <button className="bg-[#703BF7] dark:text-white rounded-[8px] px-2 py-3">Browse Properties</button>
+             <NavLink><button className="bg-[#703BF7] dark:text-white rounded-[8px] px-2 py-3">Browse Properties</button></NavLink>
           </div>
           <div className="grid max-md:grid-cols-2 md:grid-cols-3 gap-6 my-10 w-full">
             {statistics.map((statistic) => (

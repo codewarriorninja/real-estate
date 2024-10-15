@@ -1,4 +1,4 @@
-import { WadeWarren, EmelieThomson, JohnMans, SeasideSerenityVilla,MetropolitanHaven,RusticRetreatCottage, MaxMitchell, SarahJohnson, DavidBrown, MichaelTurner, GalleryOne, GalleryTwo, detail, detailTwo, detailThree, detailFourth, detailFifth, detailSix, detailSeventh, detailEight} from "../assets/Images/images";
+import { WadeWarren, EmelieThomson, JohnMans, SeasideSerenityVilla,MetropolitanHaven,RusticRetreatCottage, MaxMitchell, SarahJohnson, DavidBrown, MichaelTurner, detail, detailTwo, detailThree, detailFourth, detailFifth, detailSix, detailSeventh, detailEight} from "../assets/Images/images";
 import { Home,Property, Apartama,Sun,Bed,Bath,Building,Star,SecondStar,ThirdStar,Fourth,Fifth, Stars, Degree, Community,Valuation, Marketing, Negotiation, Closing, Harmony, Maintenance, Financial, Guardian, ROI, Customized, Area  } from "../assets/Icons/icons";
 
 
@@ -45,7 +45,7 @@ export const Properties = [
       Area:'2,500 Square Feet',
 
       detailImages:[
-       SeasideSerenityVilla,
+       detail,
        detailTwo,
        detailThree,
        detailFourth,
@@ -72,7 +72,6 @@ export const Properties = [
         Area:'2,500 Square Feet',
         
         detailImages:[
-            MetropolitanHaven,
             detail,
             detailTwo,
             detailThree,
@@ -100,7 +99,6 @@ export const Properties = [
         AreaIconUrl:Area,
         Area:'2,500 Square Feet',
         detailImages:[
-            RusticRetreatCottage,
             detail,
             detailTwo,
             detailThree,
@@ -127,7 +125,6 @@ export const Properties = [
         AreaIconUrl:Area,
         Area:'2,500 Square Feet',
         detailImages:[
-            RusticRetreatCottage,
             detail,
             detailTwo,
             detailThree,
@@ -154,7 +151,6 @@ export const Properties = [
         AreaIconUrl:Area,
         Area:'2,500 Square Feet',
         detailImages:[
-            RusticRetreatCottage,
             detail,
             detailTwo,
             detailThree,
@@ -181,7 +177,6 @@ export const Properties = [
         AreaIconUrl:Area,
         Area:'2,500 Square Feet',
         detailImages:[
-            RusticRetreatCottage,
             detail,
             detailTwo,
             detailThree,
@@ -190,7 +185,7 @@ export const Properties = [
             detailSix,
             detailSeventh,
             detailEight
-          ]
+          ] 
     }
 ]
  export const Testimoniales =[ 

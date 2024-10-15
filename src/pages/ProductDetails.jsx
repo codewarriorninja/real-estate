@@ -3,9 +3,10 @@ import { useParams } from "react-router-dom"
 import { Icon, LeftArrow, RightArrow } from "../assets/Icons/icons"
 
 const ProductDetails = ({properties}) => {
-const {id} = useParams()
-const property = properties.find((prop) =>prop.id === parseInt(id))
-const [currentImageIndex, setCurrentImageIndex] = useState();  
+const { id } = useParams();
+const property = properties.find((prop) => prop.id === parseInt(id))
+const [currentImageIndex, setCurrentImageIndex] = useState(); 
+
    if(!property){
     return <div>Propert Not Found</div>
    }
@@ -13,10 +14,10 @@ const [currentImageIndex, setCurrentImageIndex] = useState();
    const detailImages = property.detailImages || [];
 
    const nextImage = () => {
-    setCurrentImageIndex((prevIndex) => prevIndex === detailImages.length -1 ? 0 : prevIndex + 1)
+    setCurrentImageIndex((prevIndex) => prevIndex === detailImages.length - 1 ? 0 : prevIndex + 1)
    }
    const PrevImage = () => {
-    setCurrentImageIndex((prevIndex) => prevIndex === 0 ? detailImages.length-1 : prevIndex -1);
+    setCurrentImageIndex((prevIndex) => prevIndex === 0 ? detailImages.length - 1 : prevIndex -1);
    }
 
    const changeImage = (index) => {
@@ -30,7 +31,7 @@ const [currentImageIndex, setCurrentImageIndex] = useState();
           <p className="dark:text-white font-Urbanist font-medium">{property.name}</p>
           <p className="dark:text-white font-Urbanist font-medium">{property.Price}</p>
          </div>
-            <div className="flex flex-wrap justify-center space-x-2 w-full my-4 overflow-x-auto">
+            <div className="flex flex-wrap justify-center gap-1 w-full my-4 overflow-x-auto">
               {detailImages.map((image,index) => (
                 <img key={index}
                  src={image} 
@@ -59,15 +60,15 @@ const [currentImageIndex, setCurrentImageIndex] = useState();
             <p className="dark:text-[#999999] font-Urbanist lg:max-w-xl font-medium leading-8 pb-5">{property.description}</p>
             <div className="flex items-start justify-between gap-8 border-t border-t-[#9999]">
               <div className="flex flex-col items-center gap-3 py-5">
-                <img src={property.BedIconUrl} alt={property.name} />
-                <p className="dark:text-white">{property.Bedtext}</p>
+                <img src={property.BedIconUrl} alt={property.name} className="object-contain bg-black p-2 rounded-full" />
+                <p className="dark:text-white whitespace-nowrap">{property.Bedtext}</p>
               </div>
               <div className="flex flex-col items-center gap-3 pt-5">
-                <img src={property.BathIconUrl} alt={property.name} />
-                <p className="dark:text-white">{property.BathText}</p>
+                <img src={property.BathIconUrl} alt={property.name} className="object-contain bg-black p-2 rounded-full" />
+                <p className="dark:text-white whitespace-nowrap">{property.BathText}</p>
               </div>
               <div className="flex flex-col items-center gap-3 pt-5">
-                <img src={property.AreaIconUrl} alt={property.name} />
+                <img src={property.AreaIconUrl} alt={property.name} className="object-contain bg-black p-2 rounded-full" />
                 <p className="dark:text-white">{property.Area}</p>
               </div>
             </div>

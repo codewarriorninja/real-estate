@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
           <div className="flex items-center space-x-3">
           <BiCopyright className="text-xl dark:text-[#fff]" />
-          <span className="dark:text-[#fff] font-WorkSans font-medium text-lg">Develop By Henok Aragaw</span>
+          <span className="dark:text-[#fff] font-WorkSans font-medium text-lg"><a href="https://github.com/codewarriorninja" target="_blank">Develop By Henok Aragaw</a></span>
           </div>
         </div>
        </div>

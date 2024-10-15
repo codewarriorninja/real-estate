@@ -1,7 +1,6 @@
 import { About } from "../assets/Images/images"
 import { Achivement, Experiences, statistics, Values,teamMembers } from "../constants/constant"
-import { FaTwitter, FaPaperPlane } from "react-icons/fa"
-
+// import { Investments } from "../constants/constant"
 const AboutPage = () => {
   return (
     <section className="bg-white dark:bg-bg pt-16 w-full">
@@ -25,7 +24,7 @@ const AboutPage = () => {
           className="w-full h-auto object-contain" />
          </div>
        </div>
-        <div className="flex justify-between flex-wrap items-center gap-10 py-10">
+        {/* <div className="flex justify-between flex-wrap items-center gap-10 py-10">
           <div className="flex flex-1 flex-col justify-start xl:w-1/2 md:w-1/3">
              <h1 className="dark:text-white text-[28px] font-semibold font-Urbanist max-w-lg">Our Values</h1>
              <p className="dark:text-[#999999] leading-6 text-[14px] md:max-w-sm xl:max-w-md">Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary.</p>
@@ -46,7 +45,32 @@ const AboutPage = () => {
               ))}
             </div>
            </div>
-        </div>
+        </div> */}
+        <div className="flex flex-col lg:flex-row lg:items-center gap-10 pt-16 pb-16">
+           <div className="lg:w-1/3 space-y-4">
+              <h1 className="dark:text-white font-Urbanist font-semibold lg:text-[38px] md:max-w-sm lg:max-w-md">Our Values</h1>
+              <p className="dark:text-[#9999] font-Urbanist font-medium lg:max-w-sm">Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary.</p>
+              {/* <div className="p-6 dark:bg-[#1a1a1a] bg-slate-200  rounded-lg space-y-4">
+                <h2 className="dark:text-white font-Urbanist font-semibold text-xl">Unlock Your Investment Potential</h2>
+                <p className="dark:text-[#9999] font-Urbanist font-medium max-w-xs">Explore our Property Management Service categories and let us handle the complexities while you enjoy the benefits of property ownership.</p>
+                <button className="px-4 bg-bg py-2 rounded text-white">Learn More</button>
+              </div> */}
+           </div>
+           <div className="lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-6">
+             {Values.map((value) => (
+                <div key={value.title} className="border dark:bg-transparent border-[#9999] rounded-lg px-10 py-4 bg-slate-200">
+                   <div className="flex items-center gap-3">
+                     <img src={value.imgUrl}
+                       alt={value.title}
+                       className="object-contain w-16 h-16"
+                     />
+                     <p className="dark:text-white font-Urbanist font-semibold lg:text-[20px]">{value.title}</p>
+                   </div>
+                   <p className="dark:text-[#9999] font-Urbanist font-medium leading-7 pt-4">{value.description}</p>
+                </div>
+             ))}
+           </div>
+         </div>
         <div className="flex flex-col w-full pt-5">
          <h1 className="dark:text-white font-Urbanist font-semibold xl:text-[48px] sm:text-[35px] md:text-[40] max-sm:text-[28px] pb-5">Our Achievements</h1>
          <p className="dark:text-[#999999] max-w-screen-lg max-sm:max-w-lg pb-5">Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary.</p>
@@ -65,9 +89,9 @@ const AboutPage = () => {
         </div> 
         <div className="flex justify-between items-center flex-wrap gap-10 py-10 overflow-hidden">
            {Experiences.map((experience) => (
-            <div key={experience.title} className="flex-1 min-w-[230px] max-sm:w-full bg-slate-200 dark:bg-[#1A1A1A] shadow-lg rounded-[8px] p-4">
-              <h1 className="dark:text-white font-Urbanist font-semibold text-[20px] px-2 py-2">{experience.title}</h1>
-              <p className="dark:text-[#999999] font-Urbanist font-medium leading-6 px-2 py-2 max-w-xs">{experience.description}</p>
+            <div key={experience.title} className="flex-1 min-w-[250px] max-sm:w-full bg-slate-200 dark:bg-[#1A1A1A] shadow-lg rounded-[8px] p-4">
+              <h1 className="dark:text-white font-Urbanist font-semibold text-xl px-2 py-2">{experience.title}</h1>
+              <p className="dark:text-[#999999] font-Urbanist font-medium px-2 py-2 text-lg">{experience.description}</p>
             </div>
            ))}
         </div>

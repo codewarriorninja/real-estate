@@ -17,13 +17,13 @@ const PropertyCard = ({property}) => {
        />
        <h2 className="dark:text-white font-Urbanist font-semibold text-[20px] p-4">{property.name}</h2>
        <p className="dark:text-white font-Urbanist leading-relaxed mt-2 p-4">{description}</p>
-       <button onClick={() => setShowFullDescription((prevState) => !prevState)} className="text-indigo-500 mb-5 p-2 hover:text-indigo-600">{showFullDescription ? 'Less' :'More'}</button>
+       <button onClick={() => setShowFullDescription((prevState) => !prevState)} className="text-indigo-500 mb-5 p-4 hover:text-indigo-600">{showFullDescription ? 'Less' :'More'}</button>
        <div className="flex items-center justify-between gap-6 p-4">
           <div className="flex flex-col">
              <p className="dark:text-[#999999] font-Urbanist font-medium text-[18px]">{property.PriceText}</p>
-             <p className="dark:text-white font-semibold text-[25px]">{property.Price}</p>
+             <p className="dark:text-white font-semibold text-2xl">{property.Price}</p>
           </div>
-          <NavLink to={`/property/${property.id}`} className="text-white dark:text-white font-medium font-Urbanist bg-[#703BF7] px-2 py-3 rounded-[8px]">View Property Details</NavLink>
+          <NavLink to={`/property/${property.id}`} className="text-white dark:text-white font-medium font-Urbanist bg-[#703BF7] px-2 py-3 rounded-[8px] text-sm text-center md:text-lg xl:text-xl">View Property Details</NavLink>
        </div>
     </div>
   )

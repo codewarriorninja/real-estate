@@ -9,7 +9,7 @@ import ServicePage from "./pages/ServicePage"
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<MainLayout />}>
-      <Route path="/" element={<HomePage />} />
+      <Route index element={<HomePage />} />
       <Route path="/About" element={<AboutPage />} />
       <Route path="/Properties" element={<PropertyPage />} />
       <Route path="/Services" element={<ServicePage />} />
