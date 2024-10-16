@@ -59,4 +59,3 @@ Contributions are welcome! To contribute:
 ![My Hero](./src/assets/Images/blacklandingpage.png)
 ![My whiteHero](./src/assets/Images/whitelandingpage.png)
 ![My blackservice](./src/assets/Images/blackservicepage.png)
-![My whiteservice](./src/assets/Images/whitelandingpage.png)
